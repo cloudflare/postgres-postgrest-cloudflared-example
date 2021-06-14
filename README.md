@@ -49,3 +49,7 @@ $ curl https://honolulu-devices-update-drink.trycloudflare.com/users?name=eq.Dog
 ## Tunnel configuration
 
 If you'd like to create a permanent `cloudflared` tunnel at a custom endpoint, you can [configure your tunnel](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/configuration/config). The provided `cloudflared` directory will be exposed to the Docker container, so you can add `config.yml` and any relevant JSON/certificate files to authenticate and configure your tunnel.
+
+## Thanks
+
+This repository and the (soon-to-come) tutorial for integrating with this on Cloudflare Workers was inspired by @eidam's great tutorial and sample codebase for running an authenticated and secure PostgreSQL, PostgREST, and `cloudflared` integration on Google Cloud, [available here](https://github.com/cloudflare/argo-tunnel-examples/tree/master/terraform-zerotrust-postgrest-worker).
