@@ -45,3 +45,7 @@ $ curl https://honolulu-devices-update-drink.trycloudflare.com/users \
 $ curl https://honolulu-devices-update-drink.trycloudflare.com/users?name=eq.Dog
 [{"id":2, "name":"Dog"}]
 ```
+
+## Tunnel configuration
+
+If you'd like to create a permanent `cloudflared` tunnel at a custom endpoint, you can [configure your tunnel](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/configuration/config). The provided `cloudflared` directory will be exposed to the Docker container, so you can add `config.yml` and any relevant JSON/certificate files to authenticate and configure your tunnel.
