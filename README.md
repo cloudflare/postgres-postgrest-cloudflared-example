@@ -1,6 +1,16 @@
 # Postgrest Docker example
 
-An example docker-compose setup for configuring a PostgreSQL database and the associated PostgREST endpoint, which is exposed to the internet using `cloudflared`.
+An example `docker-compose` setup for configuring a PostgreSQL database and the associated PostgREST endpoint, which is exposed to the internet using `cloudflared`.
+
+## Initialize the containers
+
+You can start up all the services in this project by running `docker-compose up`:
+
+```sh
+$ docker-compose up -d
+```
+
+_Note: depending on how your Docker installation is set up, you may need to preface the above command (and any other `docker-compose` examples) with `sudo`._
 
 ## Example data
 
